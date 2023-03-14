@@ -1,38 +1,214 @@
-.App {
-  text-align: center;
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+::-moz-selection {
+    background-color: #ee0000;
+    color: #ffffff;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+::selection {
+    background-color: #ee0000;
+    color: #ffffff;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
 }
 
-.App-link {
-  color: #61dafb;
+.banner {
+    background: #000000 url('./assets/sailboat.jpg') no-repeat center;
+    width: 100%;
+    height: 660px;
+    background-size: cover;
+    position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.banner a {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    padding: 10px;
+    text-transform: uppercase;
+    background-color: #000000;
+    color: #ffffff;
+    font-size: 30px;
+}
+
+.banner a:hover {
+    background-color: rgb(52, 175, 91);
+}
+
+@media (max-width: 400px) {
+    .banner {
+        height: 300px;
+    }
+    .banner a {
+        font-size: 16px;
+    }
+}
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    background-color: #ffffff;
+    color: #000000;
+    box-shadow: 2px 2px 12px 2px;
+    flex-direction: column;
+    display: none;
+}
+.dropdown:hover {
+    display: flex;
+}
+.dropdown li {
+    padding: 10px 70px 10px 10px;
+}
+.dropdown li:hover {
+    background-color: #dddddd;
+}
+.dropdown li:last-child {
+    padding: 10px 70px 10px 10px;
+}
+
+.dropdown-active {
+    display: flex;
+}
+
+.backdrop {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: 5;
+}
+
+header {
+    position: fixed;
+    z-index: 10;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    color: white;
+}
+header ul {
+    display: flex;
+}
+header ul li {
+    list-style-type: none;
+    padding: 8px 0px;
+}
+header ul li:first-child a {
+    background-color: rgb(52, 175, 91);
+}
+header ul li:first-child a:hover {
+    background-color: lightgray;
+    color: black;
+}
+header ul li:last-child {
+    position: relative;
+    padding: 0;
+}
+header ul li:last-child:hover {
+    cursor: pointer;
+    color: black;
+    background-color: lightgray;
+}
+header ul li a {
+    color: white;
+    padding: 8px 16px;
+}
+header ul li a:hover {
+    color: black;
+    background-color: white;
+}
+header ul li p {
+    padding: 8px 16px;
+}
+
+.ourTeam {
+    padding: 50px 0;
+    text-align: center;
+}
+.ourTeam h1 {
+    text-transform: uppercase;
+    font-weight: 400;
+    margin-bottom: 25px;
+}
+.ourTeam p {
+    margin-bottom: 40px;
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 75px;
+}
+
+.teamMember {
+    display: flex;
+    flex-direction: column;
+    padding: 0 25px;
+}
+.teamMember h3 {
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+.teamMember img {
+    border-radius: 50%;
+    margin-bottom: 25px;
+}
+.teamMember img:hover {
+    opacity: 0.6;
+}
+
+@media (max-width: 400px) {
+    .team {
+        flex-direction: column;
+    }
+}
+
+.mobileNav {
+    display: none;
+}
+
+header .search {
+    padding: 8px 16px;
+}
+
+header .search:hover {
+    background-color: rgb(52, 175, 91);
+    cursor: pointer;
+}
+
+@media (max-width: 400px) {
+    .desktopNav,
+    .search {
+        display: none;
+    }
+
+    .mobileNav {
+        background-color: black;
+        color: white;
+        position: fixed;
+        top: 0;
+        width: 100%;
+
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .mobileNav p {
+        padding: 8px 16px;
+    }
+
+    .mobileMenu {
+        display: none;
+    }
 }
