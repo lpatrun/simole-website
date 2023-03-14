@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/simole-website/static/css/main.11816524.css",
+    "main.js": "/simole-website/static/js/main.59317875.js",
+    "static/media/sailboat.jpg": "/simole-website/static/media/sailboat.c766b76fb0102dcbe759.jpg",
+    "index.html": "/simole-website/index.html",
+    "main.11816524.css.map": "/simole-website/static/css/main.11816524.css.map",
+    "main.59317875.js.map": "/simole-website/static/js/main.59317875.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.11816524.css",
+    "static/js/main.59317875.js"
+  ]
+}
