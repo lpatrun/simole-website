@@ -32,6 +32,19 @@ const TEAM_MEMBERS = [
     },
 ]
 
+const LATIN_PHRASES = [
+    'Veni, vidi, vici.',
+    'Alea iacta est.',
+    'Carpe diem.',
+    'Cogito, ergo sum.',
+    'In vino veritas.',
+    'Et tu, Brute?',
+    'Acta, non verba.',
+    'Carthago delenda est.',
+    'Ad hominem',
+    'Quid pro quo',
+]
+
 export default function MainComponent() {
     return (
         <main>
@@ -54,6 +67,10 @@ export default function MainComponent() {
                         />
                     ))}
                 </div>
+
+                {LATIN_PHRASES.map((phrase) => (
+                    <p key={phrase}>{phrase}</p>
+                ))}
             </section>
         </main>
     )
