@@ -6,7 +6,7 @@ export default function BackdropComponent({ dropdown, setDropdown }) {
             {dropdown ? (
                 <button
                     onClick={() => setDropdown(!dropdown)}
-                    className={`${dropdown && 'backdrop'}`}
+                    className="backdrop"
                 ></button>
             ) : null}
         </>
