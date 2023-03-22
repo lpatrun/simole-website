@@ -3,6 +3,8 @@ import BackdropComponent from './components/BackdropComponent'
 import FooterComponent from './components/FooterComponent'
 import HeaderComponent from './components/HeaderComponent'
 import MainComponent from './components/MainComponent'
+import OurWorkComponent from './components/OurWorkComponent'
+import PricingSection from './sections/PricingSection'
 
 export default function Home() {
     const [dropdown, setDropdown] = useState(false)
@@ -23,6 +25,10 @@ export default function Home() {
             <HeaderComponent dropdown={dropdown} setDropdown={setDropdown} />
 
             <MainComponent />
+
+            <OurWorkComponent />
+
+            <PricingSection />
 
             <FooterComponent />
         </div>

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import TeamMember from './TeamMember'
 
 const TEAM_MEMBERS = [
@@ -67,10 +67,6 @@ export default function MainComponent() {
                         />
                     ))}
                 </div>
-
-                {LATIN_PHRASES.map((phrase) => (
-                    <p key={phrase}>{phrase}</p>
-                ))}
             </section>
         </main>
     )

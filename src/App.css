@@ -212,3 +212,67 @@ header .search:hover {
         display: none;
     }
 }
+
+.ourWork {
+    background-color: #222;
+    padding: 20px 10px;
+
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.message {
+    color: #eee;
+}
+
+.workComponent {
+    display: flex;
+    flex-direction: column;
+
+    background-color: #eee;
+    color: #222;
+}
+
+.workContent {
+    padding: 10px;
+}
+
+.workContent h3,
+h4,
+p {
+    margin-bottom: 10px;
+}
+
+.containerpr {
+    border: 1px solid black;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.containerpr:hover {
+    box-shadow: 16px 14px 28px -9px rgba(0, 0, 0, 0.75);
+}
+.containerpr ul {
+    list-style-type: none;
+}
+.containerpr ul li:first-child {
+    height: 10vh;
+    background-color: #3c3a3a;
+    color: aliceblue;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+.containerpr ul li:last-child button:hover {
+    background-color: #867e7e;
+}
+.containerpr ul li:last-child button {
+    padding: 5px;
+    background-color: #009688;
+    color: aliceblue;
+}
